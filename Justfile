@@ -1,5 +1,8 @@
 #!/usr/bin/env just -f
 
+build:
+    nix build .#
+
 format:
     just _format "*.nix" nixfmt
     just _format "*.yaml" yamlfmt
